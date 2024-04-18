@@ -3,3 +3,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/academia
     username: postgres
     password: 6640
+jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: update
