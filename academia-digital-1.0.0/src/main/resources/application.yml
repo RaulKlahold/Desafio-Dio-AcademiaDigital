@@ -1,3 +1,5 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/academia/
+    url: jdbc:postgresql://localhost:5432/academia
+    username: postgres
+    password: 6640
