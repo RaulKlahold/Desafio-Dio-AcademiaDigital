@@ -1,9 +1,9 @@
 package me.dio.academia.digital.controller;
 
+import me.dio.academia.digital.entity.Aluno;
+import me.dio.academia.digital.entity.form.AlunoForm;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/alunos")
@@ -17,4 +17,8 @@ public class AlunoController {
         return service.getAll();
     }
 
+    @PostMapping
+    public Aluno create (@RequestBody AlunoForm form) {
+        return service.create(form);
+    }
 }
